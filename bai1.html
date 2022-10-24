@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1 </title>
+</head>
+<body>
+<script>
+
+  function findAvg(a,b,c){
+    let Avg = [a,b,c]
+    let sum =0
+    let tb;
+    for (let i=0;i<Avg.length;i++){
+      sum += Avg[i]
+    }
+    tb=sum/Avg.length
+    return tb
+
+  }
+  while (true) {
+      let maths=parseInt(prompt('Maths points'))
+      let physical = parseInt(prompt("physical points"))
+      let chem = parseInt(prompt("chem points"))
+      alert(findAvg(maths,physical,chem))
+  }
+
+
+
+</script>
+</body>
+</html>
